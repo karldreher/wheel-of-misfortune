@@ -1,0 +1,5 @@
+localhost, 0.0.0.0 {
+    tls internal
+    root * /srv
+    file_server
+}
