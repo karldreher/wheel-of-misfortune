@@ -6,8 +6,6 @@ It is a great way to train new hires, interns, and seasoned engineers to become 
 
 The game is inspired by the [Site Reliability Engineering](https://landing.google.com/sre/book/chapters/accelerating-sre-on-call.html#xref_training_disaster-rpg) book.
 
-[Demo website](https://dastergon.gr/wheel-of-misfortune)
-
 ## Instructions
 ### Terminology
 
@@ -15,7 +13,6 @@ The game is inspired by the [Site Reliability Engineering](https://landing.googl
 *   **Game Master**: The host-coordinator of the session.
 *   **Volunteer**: The trainee on-call engineer.
 
-Feel free to fork the [repository](https://github.com/dastergon/wheel-of-misfortune) or [download](https://github.com/dastergon/wheel-of-misfortune/releases) the stable release.
 Copy the [general\_incidents.json.sample](incidents/general\_incidents.json.sample) file to *general_incidents.json*, inside the [incidents/](incidents/) directory, and insert your incident scenarios into it.
 
 To run the game locally on your computer please navigate the the main directory of the downloaded project i.e. `wheel-of-misfortune-5.0/` and from here start a web server i.e. `python -m SimpleHTTPServer` after that open the http://localhost:8000 using your web browser.
@@ -29,7 +26,7 @@ The file has the following format:
 You can also use [general\_incidents.jsonnet](incidents/general_incidents.jsonnet.sample) as an example, in case you want to generate your incident scenarios using [Jsonnet](https://jsonnet.org/).
 
 ### Ink
-[Ink](https://github.com/inkle/ink) is a scripting language for writing interactive narrative stories. It enables us to write interactive incident response narratives for team or individual trainings. You can use [Inky](https://github.com/inkle/inky) to write an interactive narrative for an incident and then export the story as JSON. Then, you can store the story file inside the [incidents/](incidents/) folder and associate the Ink story file with an Incident scenario using the **inkstory** key. You can read an example incident narrative [here](https://github.com/dastergon/wheel-of-misfortune/tree/master/incidents/redis-story.json).
+[Ink](https://github.com/inkle/ink) is a scripting language for writing interactive narrative stories. It enables us to write interactive incident response narratives for team or individual trainings. You can use [Inky](https://github.com/inkle/inky) to write an interactive narrative for an incident and then export the story as JSON. Then, you can store the story file inside the [incidents/](incidents/) folder and associate the Ink story file with an Incident scenario using the **inkstory** key. 
 
 ### Role Playing
 #### Game Master
@@ -53,9 +50,6 @@ Most importantly, **have fun!**
 
 You can [read](https://landing.google.com/sre/book/chapters/accelerating-sre-on-call.html#xref_training_disaster-rpg) a comprehensive example on how to conduct the exercise in the Google SRE book.
 
-### Featured
-
-The Wheel of Misfortune was established as a practice in [Open Practice Library](https://openpracticelibrary.com/) and this project was [featured](https://openpracticelibrary.com/practice/wheel-of-misfortune/) there.
 
 ### Resources
 
